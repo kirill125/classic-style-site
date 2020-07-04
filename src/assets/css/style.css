@@ -18,6 +18,23 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+    transform: scale(0.8) translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
